@@ -1,0 +1,100 @@
+.container{
+    background-color: #e5e5e5;
+    max-width: 414px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    background-color: #cf2b2b;
+    max-width: 414px;
+    height: 92px;
+    padding: 8px 0px 5px 21px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #ffffff;
+    box-shadow: -10px 4px 1em black;
+
+}
+
+.logo{
+    font-family: righteous;
+    font-weight: 400;
+    font-size: 44px;
+    letter-spacing: -0.012px;
+    line-height: 55px;
+    top: 0;
+    left: 0;
+}
+
+.pratoPrincipal{
+    margin-top: 21px;
+}
+
+.sectionName {
+    font-family: righteous;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: -0.018px;
+    margin-bottom: 17px;
+}
+
+ul {
+    display: flex;
+    overflow-x: scroll;
+    
+}
+
+li {
+    background-color: white;
+    border-radius: 9px;
+    margin-right: 16px;
+    width: 172px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+ul > li > h4 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #333333;
+
+}
+
+ul > li > p {
+    color: #a6a6a6;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    
+
+}
+
+img {
+    width: 144px;
+    height: 87px;
+    
+}
+
+main{
+    padding: 8px 0px 5px 21px;
+    box-sizing: border-box;
+    max-width: 414px;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.bebida {
+    margin-top: 27px;
+}
+
+
+.sobremesa {
+    margin-top: 27px;
+}
