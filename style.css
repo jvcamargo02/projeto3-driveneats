@@ -83,12 +83,9 @@ main{
     padding: 8px 0px 5px 21px;
     box-sizing: border-box;
     max-width: 414px;
-    overflow: hidden;
+    
 }
 
-::-webkit-scrollbar{
-    display: none;
-}
 
 .bebida {
     margin-top: 27px;
@@ -97,4 +94,16 @@ main{
 
 .sobremesa {
     margin-top: 27px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.preco{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #333333;
+    margin-top: 5px;
 }
