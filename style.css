@@ -1,12 +1,17 @@
 .container{
     background-color: #e5e5e5;
-    max-width: 414px;
+    
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+.content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
 header{
     background-color: #cf2b2b;
-    max-width: 414px;
+    max-width: 800px;
     height: 92px;
     padding: 8px 0px 5px 21px;
     box-sizing: border-box;
@@ -15,6 +20,9 @@ header{
     line-height: 21px;
     color: #ffffff;
     box-shadow: -10px 4px 1em black;
+    display: flex;
+    flex-direction: column;
+    
 
 }
 
@@ -30,6 +38,11 @@ header{
 
 .pratoPrincipal{
     margin-top: 21px;
+    width: 100%;
+}
+
+.pratoPrincipal > ul > li {
+    cursor: pointer;
 }
 
 .sectionName {
@@ -52,15 +65,18 @@ li {
     border-radius: 9px;
     margin-right: 16px;
     width: 172px;
-    padding: 15px;
+    padding: 10px;
+    border: 5px solid green;
     box-sizing: border-box;
 }
+
 
 ul > li > h4 {
     font-size: 16px;
     line-height: 19px;
     font-weight: 700;
     color: #333333;
+    margin-top: 8px;
 
 }
 
@@ -69,7 +85,7 @@ ul > li > p {
     font-size: 15px;
     line-height: 18px;
     font-weight: 300;
-    
+    margin-top: 5px;
 
 }
 
@@ -82,18 +98,24 @@ img {
 main{
     padding: 8px 0px 5px 21px;
     box-sizing: border-box;
-    max-width: 414px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 102px;
+
 }
 
 
 .bebida {
     margin-top: 27px;
+    width: 100%;
 }
 
 
 .sobremesa {
     margin-top: 27px;
+    width: 100%;
 }
 
 ::-webkit-scrollbar{
@@ -105,5 +127,54 @@ main{
     line-height: 19px;
     font-weight: 400;
     color: #333333;
-    margin-top: 5px;
+    
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    height: 92px;
+    background-color: white;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+}
+
+button{
+    width: 364px;
+    height: 64px;
+    margin: 0 auto;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: roboto;
+    line-height: 24px;
+    letter-spacing: -0.018px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    background-color: #cbcbcb;
+    border: none;
+
+
+
+}
+
+.selecao{
+background-color: green;
+}
+
+ion-icon{
+    background-color: green;
+    clip-path: circle(50%);
+    color: white;
+    font-size: 14px;
+}
+
+.teste{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
 }
