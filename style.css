@@ -99,6 +99,7 @@ ul > li > p {
 img {
     width: 144px;
     height: 87px;
+    object-fit: cover;
     
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,225 +9,227 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>CamargoEats</title>
 
 </head>
-    <body>
-    
+
+<body>
+
     <div class="container">
-    
-        
+
+
         <div class="content">
-        <header>
-            <h1 class="logo">CamargoEats</h1>
-            <h2>Sua comida em 6 minutos</h2>
+            <header>
+                <h1 class="logo">CamargoEats</h1>
+                <h2>Sua comida em 6 minutos</h2>
 
-        </header>
-        <main>
-        <section class="pratoPrincipal">
+            </header>
+            <main>
+                <section class="pratoPrincipal">
 
-            <h3 class="sectionName">Primeiro, seu prato</h3>
+                    <h3 class="sectionName">Primeiro, seu prato</h3>
 
-            <ul>
-                <li class="Lasanha" onclick="selecionarPrato('Lasanha')">
+                    <ul>
+                        <li class="Lasanha" onclick="selecionarPrato('Lasanha')">
 
-                    <img src="images/3317_grid_fundo_mobile.webp" alt="Lasanha - Queijo com molho de tomate">
-                    <h4>Lasanha</h4>
-                    <p>Uma lasanha divina, com queijo e molho de tomate. </p>
-                    <p class="preco">R$16,90</p>
-                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                   
-                    
-                </li>
-                
-                <li class="Nhoque" onclick="selecionarPrato('Nhoque')">
-                    <img src="images/2414_grid_fundo_mobile.webp" alt="Nhoque no molho bechamel">
-                    <h4>Nhoque</h4>
-                    <p>Deliciosos nhoques mergulhados em molho bechamel. </p>
-                    <p class="preco">R$14,90</p>
-                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-                
-                <li class="Spaghetti" onclick="selecionarPrato('Spaghetti')">
-                    <img src="images/2416_grid_fundo_mobile.webp" alt="Spaghetti">
-                    <h4>Spaghetti</h4>
-                    <p>Macarrão caseiro, comprado da fábrica.</p>
-                    <p class="preco">R$14,90</p>
-                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-                
-                <li class="Penne" onclick="selecionarPrato('Penne')">
-                    <img src="images/7609_grid_fundo_mobile.webp" alt="Penne">
-                    <h4>Penne</h4>
-                    <p>Penne importado da Itália, diretamente para a sua mesa.</p>
-                    <p class="preco">R$14,90</p>
-                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-                
-                <li class="Penne" onclick="selecionarPrato('Penne')">
-                    <img src="images/7609_grid_fundo_mobile.webp" alt="Penne">
-                    <h4>Penne</h4>
-                    <p>Penne importado da Itália, diretamente para a sua mesa.</p>
-                    <p class="preco">R$14,90</p>
-                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-                
-                <li class="Penne" onclick="selecionarPrato('Penne')">
-                    <img src="images/7609_grid_fundo_mobile.webp" alt="Penne">
-                    <h4>Penne</h4>
-                    <p>Penne importado da Itália, diretamente para a sua mesa.</p>
-                    <p class="preco">R$14,90</p>
-                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-                
-                <li class="Penne" onclick="selecionarPrato('Penne')">
-                    <img src="images/7609_grid_fundo_mobile.webp" alt="Penne">
-                    <h4>Penne</h4>
-                    <p>Penne importado da Itália, diretamente para a sua mesa.</p>
-                    <p class="preco">R$14,90</p>
-                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-                
-            </ul>
-
-        </section> <!-- pratoPrincipal -->
-
-        <section class="bebida">
-
-            <h3 class="sectionName">Agora, sua bebida</h3>
-
-            <ul>
-                <li  class="Coquinha_Gelada"  onclick="selecionarBebida('Coquinha_Gelada')" >
-                    <img src="images/coquinha_gelada 1.png" alt="Frango Yin Yang">
-                    <h4>Coquinha gelada</h4>
-                    <p>Lata 350ml</p>
-                    <p class="preco">R$14,90</p>
-                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-
-                <li class="Coquinha_Gelada1"  onclick="selecionarBebida('Coquinha_Gelada1')">
-                    <img src="images/coquinha_gelada 1.png" alt="Frango Yin Yang">
-                    <h4>Coquinha gelada</h4>
-                    <p>Lata 350ml</p>
-                    <p class="preco">R$14,90</p>
-                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-
-                <li class="Coquinha_Gelada2"  onclick="selecionarBebida('Coquinha_Gelada2')">
-                    <img src="images/coquinha_gelada 1.png" alt="Frango Yin Yang">
-                    <h4>Coquinha gelada</h4>
-                    <p>Lata 350ml</p>
-                    <p class="preco">R$14,90</p>
-                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-                
-                <li class="Coquinha_Gelada3"  onclick="selecionarBebida('Coquinha_Gelada3')">
-                    <img src="images/coquinha_gelada 1.png" alt="Frango Yin Yang">
-                    <h4>Coquinha gelada</h4>
-                    <p>Lata 350ml</p>
-                    <p class="preco">R$14,90</p>
-                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-                
-
-            </ul>
-            
+                            <img src="images/3317_grid_fundo_mobile.webp" alt="Lasanha - Queijo com molho de tomate">
+                            <h4>Lasanha</h4>
+                            <p>Uma lasanha divina, com queijo e molho de tomate. </p>
+                            <p class="preco">R$25,90</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
 
 
-        </section> <!-- bebida -->
+                        </li>
 
-        <section class="sobremesa">
+                        <li class="Nhoque" onclick="selecionarPrato('Nhoque')">
+                            <img src="images/2414_grid_fundo_mobile.webp" alt="Nhoque no molho bechamel">
+                            <h4>Nhoque</h4>
+                            <p>Deliciosos nhoques mergulhados em molho bechamel. </p>
+                            <p class="preco">R$22,90</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
+                        </li>
 
-            <h3 class="sectionName">Por fim, sua sobremesa</h3>
+                        <li class="Spaghetti" onclick="selecionarPrato('Spaghetti')">
+                            <img src="images/2416_grid_fundo_mobile.webp" alt="Spaghetti">
+                            <h4>Spaghetti</h4>
+                            <p>Macarrão caseiro, comprado da fábrica.</p>
+                            <p class="preco">R$15,90</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
+                        </li>
 
-            <ul>
-                <li class="pudim4" onclick="selecionarSobremesa('pudim4')">
-                    <img src="images/images (2).jpeg" alt="Frango Yin Yang">
-                    <h4>Pudim</h4>
-                    <p>Apenas pudim</p>
-                    <p class="preco">R$14,90</p>
-                     <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-                
-                
-                <li class="pudim3" onclick="selecionarSobremesa('pudim3')">
-                    <img src="images/images (2).jpeg" alt="Frango Yin Yang">
-                    <h4>Pudim</h4>
-                    <p>Apenas pudim</p>
-                    <p class="preco">R$14,90</p>
-                     <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-                
-                <li class="pudim2" onclick="selecionarSobremesa('pudim2')">
-                    <img src="images/images (1).jpeg" alt="Yin Yang">
-                    <h4>Bolo de Maracujá</h4>
-                    <p>Apenas pudim</p>
-                    <p class="preco">R$14,90</p>
-                     <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-                
-                <li class="pudim1" onclick="selecionarSobremesa('pudim1')">
-                    <img src="images/images.jpeg" alt="Bolo de Banana">
-                    <h4>Bolo de Banana</h4>
-                    <p>Muita banana, pra pouco bolo.</p>
-                    <p class="preco">R$14,90</p>
-                     <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
-                </li>
-            
+                        <li class="Penne" onclick="selecionarPrato('Penne')">
+                            <img src="images/7609_grid_fundo_mobile.webp" alt="Penne">
+                            <h4>Penne</h4>
+                            <p>Penne importado da Itália, diretamente para a sua mesa.</p>
+                            <p class="preco">R$18,90</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
+                        </li>
 
-            </ul>
+                        <li class="Lasanha_bechamel" onclick="selecionarPrato('Lasanha_bechamel')">
+                            <img src="images/2422_grid_fundo_mobile.webp" alt="Lasanha ao molho bechamel">
+                            <h4>Lasanha bechamel</h4>
+                            <p>Uma lasanha divina, com queijo e molho bechamel.</p>
+                            <p class="preco">R$28,90</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
+                        </li>
 
 
-        </section> <!-- sobremesa -->
-    
+                    </ul>
 
-    </main>
+                </section> <!-- pratoPrincipal -->
+
+                <section class="bebida">
+
+                    <h3 class="sectionName">Agora, sua bebida</h3>
+
+                    <ul>
+                        <li class="Especial_DEV" onclick="selecionarBebida('Especial_DEV')">
+                            <img src="images/img_500_1.png" style="width: 144px; height: 87px; object-fit: contain;" alt="Coca-Cola Café">
+                            <h4>Coquinha Café</h4>
+                            <p>Promoção válida somente para DEVs.</p>
+                            <p class="preco">R$0,90</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
+                        </li>
+
+                        <li class="Guarana" onclick="selecionarBebida('Guarana')">
+                            <img src="images/REFRIGERANTE-GUARANA-PUREZA-LATA-350ML.png" style="width: 144px; height: 87px; object-fit: contain;"alt="Guaraná Pureza">
+                            <h4>Guaraná Pureza</h4>
+                            <p>De puro não tem nada. É uma dureza beber esse trem.</p>
+                            <p class="preco">R$3,90</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
+                        </li>
+
+                        <li class="Sprite" onclick="selecionarBebida('Sprite')">
+                            <img src="images/refrigerante_sprite_lata_350ml_9470893b-818d-40c4-865d-d831dea21e21.jpg" style="width: 144px; height: 87px; object-fit: contain;" alt="Sprite">
+                            <h4>Sprite</h4>
+                            <p>Para quem quer fugir da Coca-Cola um pouco.</p>
+                            <p class="preco">R$5,90</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
+                        </li>
+
+                        <li class="Coquinha_Gelada3" onclick="selecionarBebida('Coquinha_Gelada3')">
+                            <img src="images/coca-600x540-600x540.png" style="width: 144px; height: 87px; object-fit: contain;" alt="Coca-Cola">
+                            <h4>Coquinha gelada</h4>
+                            <p>Lata 350ml</p>
+                            <p class="preco">R$5,85</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
+                        </li>
 
 
-        <footer>
-            <button onclick="popup()">
-                Selecione os 3 itens para fechar o pedido
-            </button>
-        </footer>
-        <div class="popup-wrapper">
-            <div class="popup">
-                <div class="popup-content">
+                    </ul>
+
+
+
+                </section> <!-- bebida -->
+
+                <section class="sobremesa">
+
+                    <h3 class="sectionName">Por fim, sua sobremesa</h3>
+
+                    <ul>
+
+
+                        <li class="Morango" onclick="selecionarSobremesa('Morango')">
+                            <img src="images/13283_grid_fundo_mobile (1).webp" alt="MilkShake de Morango">
+                            <h4>Shake de Morango</h4>
+                            <p>Cada gole, uma sensação.</p>
+                            <p class="preco">R$13,90</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
+                        </li>
+
+                        <li class="Chocolate" onclick="selecionarSobremesa('Chocolate')">
+                            <img src="images/13284_grid_fundo_mobile (1).webp" alt="MilkShake de Chocolate">
+                            <h4 style="letter-spacing: -0.018em;">Shake de Chocolate</h4>
+                            <p>O preferidinho da galera.</p>
+                            <p class="preco">R$15,90</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
+                        </li>
+
+                        <li class="flocos" onclick="selecionarSobremesa('flocos')">
+                            <img src="images/13285_grid_fundo_mobile.webp" alt="MilkShake de Flocos">
+                            <h4>Shake de flocos</h4>
+                            <p>Talvez seja de óreo. Consulte disponibilidade.</p>
+                            <p class="preco">R$12,90</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
+                        </li>
+
+                        <li class="Pastel_belem" onclick="selecionarSobremesa('Pastel_belem')">
+                            <img src="images/58019_RGZ_FIDELIDADE_600X600px_2_Pastel_De_Belem.webp"
+                                alt="Pastel de Belém">
+                            <h4>Pastel de Belém</h4>
+                            <p>Sim, veio de Belém mesmo. Ah, e vem 2, pra tu dividir.</p>
+                            <p class="preco">R$7,40</p>
+                            <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle">
+                            </ion-icon>
+                        </li>
+
+                    </ul>
+
+
+                </section> <!-- sobremesa -->
+
+
+            </main>
+
+
+            <footer>
+                <button onclick="popup()">
+                    Selecione os 3 itens para fechar o pedido
+                </button>
+            </footer>
+            <div class="popup-wrapper">
+                <div class="popup">
+                    <div class="popup-content">
                         <h2>Confirme seu pedido</h2>
                         <div class="pedidos">
-                           <div class="pedido food" >
+                            <div class="pedido food">
                                 <div class="item1">
-                                <p>Lasanha</p>
+                                    <p>Lasanha</p>
                                 </div>
-                               <div class="precoPedido foodPrice">
-                                <p>R$10,00</p>
-                           </div>
-                           </div>
-                           
-                           <div class="pedido drink">
+                                <div class="precoPedido foodPrice">
+                                    <p>R$10,00</p>
+                                </div>
+                            </div>
+
+                            <div class="pedido drink">
                                 <div class="item2">
                                     <p>Lasanha</p>
                                 </div>
                                 <div class="precoPedido drinkPrice">
-                                <p>R$10,00</p>
+                                    <p>R$10,00</p>
                                 </div>
                             </div>
 
-                        <div class="pedido dessert">
-                            <div class="item3">
-                                <p>Lasanha</p>
+                            <div class="pedido dessert">
+                                <div class="item3">
+                                    <p>Lasanha</p>
+                                </div>
+                                <div class="precoPedido dessertPrice">
+                                    <p>R$10,00</p>
+                                </div>
                             </div>
-                            <div class="precoPedido dessertPrice">
-                             <p>R$10,00</p>
-                            </div>
-                        </div>
-                        <div class="valor" style="display: flex; justify-content: space-between;">
-                         Total:
+                            <div class="valor" style="display: flex; justify-content: space-between;">
+                                Total:
 
-                         <div class="valorTotal">
-                             R$10,00
-                         </div>
-                        </div>
+                                <div class="valorTotal">
+                                    R$10,00
+                                </div>
+                            </div>
                         </div>
                         <button class="pedirBtn">
                             Tudo certo, pode pedir!
@@ -234,16 +237,17 @@
                         <button class="cancelPopup" onclick="cancelPopup()">
                             Cancelar
                         </button>
-                </div><!-- popup-content -->
-            
-            </div><!-- popup -->
-        </div><!-- popup wrapper -->
+                    </div><!-- popup-content -->
 
-    </div><!-- content -->
+                </div><!-- popup -->
+            </div><!-- popup wrapper -->
+
+        </div><!-- content -->
     </div> <!-- container -->
     <script src="script.js" href="JavaScript"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
-    </body>
+
+</body>
+
 </html>
