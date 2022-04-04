@@ -66,8 +66,9 @@ li {
     margin-right: 16px;
     width: 172px;
     padding: 10px;
-    border: 5px solid green;
+    border: 5px solid white;
     box-sizing: border-box;
+    color: white;
 }
 
 
@@ -127,7 +128,9 @@ main{
     line-height: 19px;
     font-weight: 400;
     color: #333333;
-    
+    width: 100px;
+    float: left;
+    margin-top: 10px;
 }
 
 footer{
@@ -155,26 +158,32 @@ button{
     font-weight: 400;
     background-color: #cbcbcb;
     border: none;
-
-
-
-}
-
-.selecao{
-background-color: green;
-}
-
-ion-icon{
-    background-color: green;
-    clip-path: circle(50%);
-    color: white;
-    font-size: 14px;
-}
-
-.teste{
-    width: 100%;
     display: flex;
-    margin-top: 10px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    padding: 0px 80px;
+
+}
+
+.selecaoPrato{
+color: green;
+border: 5px solid green;
+
+}
+
+.selecaoBebida{
+    color: green;
+    border: 5px solid green;
+    
+    }
+
+.selecaoSobremesa {
+    color: green;
+    border: 5px solid green;
+    
+}
+
+.botaoVerde{
+    background-color: green;
+    cursor:pointer;
 }

@@ -15,7 +15,7 @@
     <body>
     
     <div class="container">
-
+        <div class="confirmarPedido">
         <div class="content">
         <header>
             <h1 class="logo">CamargoEats</h1>
@@ -28,37 +28,39 @@
             <h3 class="sectionName">Primeiro, seu prato</h3>
 
             <ul>
-                <li id="frango" onclick="selecionarPrato('prato1')">
+                <li class="Lasanha" onclick="selecionarPrato('Lasanha')">
 
-                    <img src="images/frango_yin_yang 1.png" alt="Frango Yin Yang">
-                    <h4>Frango Yin Yang</h4>
-                    <p>Um pouco de batata, um pouco de salada</p>
-                    <div class="teste">
-                    <p class="preco">R$14,90</p>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    </div><!-- teste -->
+                    <img src="images/3317_grid_fundo_mobile.webp" alt="Lasanha - Queijo com molho de tomate">
+                    <h4>Lasanha</h4>
+                    <p>Uma lasanha divina, com queijo e molho de tomate. </p>
+                    <p class="preco">R$16,90</p>
+                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
+                   
                     
                 </li>
                 
-                <li onclick="selecionarPrato('Frango Yin Yang2')">
-                    <img src="images/frango_yin_yang 1.png" alt="Frango Yin Yang2">
-                    <h4>Frango Yin Yang</h4>
-                    <p>Um pouco de batata, um pouco de salada</p>
+                <li class="Nhoque" onclick="selecionarPrato('Nhoque')">
+                    <img src="images/2414_grid_fundo_mobile.webp" alt="Nhoque no molho bechamel">
+                    <h4>Nhoque</h4>
+                    <p>Deliciosos nhoques mergulhados em molho bechamel. </p>
                     <p class="preco">R$14,90</p>
+                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
                 </li>
                 
-                <li onclick="selecionarPrato('Frango Yin Yang3')">
-                    <img src="images/frango_yin_yang 1.png" alt="Frango Yin Yang3">
-                    <h4>Frango Yin Yang</h4>
-                    <p>Um pouco de batata, um pouco de salada</p>
+                <li class="Spaghetti" onclick="selecionarPrato('Spaghetti')">
+                    <img src="images/2416_grid_fundo_mobile.webp" alt="Spaghetti">
+                    <h4>Spaghetti</h4>
+                    <p>Macarrão caseiro, comprado da fábrica, chegou hoje.</p>
                     <p class="preco">R$14,90</p>
+                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
                 </li>
                 
-                <li onclick="selecionarPrato('Frango Yin Yang4')">
-                    <img src="images/frango_yin_yang 1.png" alt="Frango Yin Yang4">
-                    <h4>Frango Yin Yang</h4>
-                    <p>Um pouco de batata, um pouco de salada</p>
+                <li class="Penne" onclick="selecionarPrato('Penne')">
+                    <img src="images/7609_grid_fundo_mobile.webp" alt="Penne">
+                    <h4>Penne</h4>
+                    <p>Penne importado da Itália, diretamente para a sua mesa.</p>
                     <p class="preco">R$14,90</p>
+                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
                 </li>
                 
             </ul>
@@ -70,32 +72,36 @@
             <h3 class="sectionName">Agora, sua bebida</h3>
 
             <ul>
-                <li>
+                <li  class="Coquinha_Gelada"  onclick="selecionarBebida('Coquinha_Gelada')" >
                     <img src="images/coquinha_gelada 1.png" alt="Frango Yin Yang">
                     <h4>Coquinha gelada</h4>
                     <p>Lata 350ml</p>
                     <p class="preco">R$14,90</p>
+                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
                 </li>
 
-                <li>
+                <li class="Coquinha_Gelada1"  onclick="selecionarBebida('Coquinha_Gelada1')">
                     <img src="images/coquinha_gelada 1.png" alt="Frango Yin Yang">
                     <h4>Coquinha gelada</h4>
                     <p>Lata 350ml</p>
                     <p class="preco">R$14,90</p>
+                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
                 </li>
 
-                <li>
+                <li class="Coquinha_Gelada2"  onclick="selecionarBebida('Coquinha_Gelada2')">
                     <img src="images/coquinha_gelada 1.png" alt="Frango Yin Yang">
                     <h4>Coquinha gelada</h4>
                     <p>Lata 350ml</p>
                     <p class="preco">R$14,90</p>
+                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
                 </li>
                 
-                <li>
+                <li class="Coquinha_Gelada3"  onclick="selecionarBebida('Coquinha_Gelada3')">
                     <img src="images/coquinha_gelada 1.png" alt="Frango Yin Yang">
                     <h4>Coquinha gelada</h4>
                     <p>Lata 350ml</p>
                     <p class="preco">R$14,90</p>
+                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
                 </li>
                 
 
@@ -110,32 +116,37 @@
             <h3 class="sectionName">Por fim, sua sobremesa</h3>
 
             <ul>
-                <li>
-                    <img src="images/pudim 1.png" alt="Frango Yin Yang">
-                    <h4>Pudim</h4>
-                    <p>Apenas pudim</p>
-                    <h4>R$14,90</h4>
-                </li>
-                
-                <li>
-                    <img src="images/pudim 1.png" alt="Frango Yin Yang">
+                <li class="pudim4" onclick="selecionarSobremesa('pudim4')">
+                    <img src="images/images (2).jpeg" alt="Frango Yin Yang">
                     <h4>Pudim</h4>
                     <p>Apenas pudim</p>
                     <p class="preco">R$14,90</p>
+                     <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
                 </li>
                 
-                <li>
-                    <img src="images/pudim 1.png" alt="Frango Yin Yang">
+                
+                <li class="pudim3" onclick="selecionarSobremesa('pudim3')">
+                    <img src="images/images (2).jpeg" alt="Frango Yin Yang">
                     <h4>Pudim</h4>
                     <p>Apenas pudim</p>
                     <p class="preco">R$14,90</p>
+                     <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
                 </li>
                 
-                <li>
-                    <img src="images/pudim 1.png" alt="Frango Yin Yang">
-                    <h4>Pudim</h4>
+                <li class="pudim2" onclick="selecionarSobremesa('pudim2')">
+                    <img src="images/images (1).jpeg" alt="Yin Yang">
+                    <h4>Bolo de Maracujá</h4>
                     <p>Apenas pudim</p>
                     <p class="preco">R$14,90</p>
+                     <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
+                </li>
+                
+                <li class="pudim1" onclick="selecionarSobremesa('pudim1')">
+                    <img src="images/images.jpeg" alt="Bolo de Banana">
+                    <h4>Bolo de Banana</h4>
+                    <p>Muita banana, pra pouco bolo.</p>
+                    <p class="preco">R$14,90</p>
+                     <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
                 </li>
             
 
@@ -149,13 +160,14 @@
 
 
         <footer>
-            <button>
+            <button onclick="atualizarBotao(this)">
                 Selecione os 3 itens para fechar o pedido
             </button>
         </footer>
 
     
     </div><!-- content -->
+    </div><!-- confirmarPedido -->
     </div> <!-- container -->
     <script src="script.js" href="JavaScript"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
