@@ -4,6 +4,8 @@ let sobremesa;
 let valorPrato;
 let valorBebida;
 let valorSobremesa;
+let total;
+
 
 function selecionarPrato(prato) {
   
@@ -88,7 +90,7 @@ function popup (){
   const popupPrecoPrato = document.querySelector('.foodPrice')
   const popupPrecoBebida = document.querySelector('.drinkPrice')
   const popupPrecoSobremesa = document.querySelector('.dessertPrice')
-  const total = document.querySelector('.valorTotal')
+  total = document.querySelector('.valorTotal')
 
 
 
@@ -116,6 +118,21 @@ function cancelPopup () {
 
 }
 
-function pedidoWhatsapp (){
-  
+function enviarPedido (){
+
+  const nomeUser = prompt("Qual o seu nome?")
+  const endUser = prompt("Qual o seu endereço?")
+
+let mensage = `Olá, gostaria de fazer o pedido:
+ - Prato: ${document.querySelector('.selecaoPrato > h4').innerHTML}
+ - Bebida: ${document.querySelector('.selecaoBebida > h4').innerHTML}
+ - Sobremesa: ${document.querySelector('.selecaoSobremesa > h4').innerHTML}, 
+ Total: ${total.innerHTML}
+ 
+ Nome: ${nomeUser}
+ Endereço: ${endUser}`
+
+
+window.open(`http://wa.me/+5516994242447?text=${mensage}` )
+
 }
