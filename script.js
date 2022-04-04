@@ -70,3 +70,41 @@ function atualizarBotao () {
     
   } 
 }
+
+function popup (){
+ 
+  const botaoLiberado = document.querySelector('.botaoVerde')
+  const selecaoBebida = document.querySelector('.selecaoBebida > h4').innerHTML
+  const selecaoSobremesa = document.querySelector('.selecaoSobremesa > h4').innerHTML
+  const selecaoPrato = document.querySelector('.selecaoPrato > h4').innerHTML
+  const precoBebida = document.querySelector('.selecaoBebida > .preco').innerHTML
+  const precoSobremesa = document.querySelector('.selecaoSobremesa > .preco').innerHTML
+  const precoPrato = document.querySelector('.selecaoPrato > .preco').innerHTML
+  const popupPrato = document.querySelector('.item1')
+  const popupBebida = document.querySelector('.item2')
+  const popupSobremesa = document.querySelector('.item3')
+  const popupPrecoPrato = document.querySelector('.foodPrice')
+  const popupPrecoBebida = document.querySelector('.drinkPrice')
+  const popupPrecoSobremesa = document.querySelector('.dessertPrice')
+
+  if(botaoLiberado !== null){
+  const popup = document.querySelector(".popup-wrapper")
+  popup.style.display = "inherit"
+  popupPrato.innerHTML = selecaoPrato
+  popupPrecoPrato.innerHTML = precoPrato
+  popupBebida.innerHTML = selecaoBebida
+  popupPrecoBebida.innerHTML = precoBebida
+  popupSobremesa.innerHTML = selecaoSobremesa
+  popupPrecoSobremesa.innerHTML = precoSobremesa
+  }
+
+
+
+}
+
+function cancelPopup () {
+
+  const popup = document.querySelector(".popup-wrapper")
+  popup.style.display = "none"
+
+}

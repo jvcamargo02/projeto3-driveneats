@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>DrivenEats</title>
+    <title>CamargoEats</title>
 
 </head>
     <body>
     
     <div class="container">
-        <div class="confirmarPedido">
+    
+        
         <div class="content">
         <header>
             <h1 class="logo">CamargoEats</h1>
@@ -51,6 +52,30 @@
                     <img src="images/2416_grid_fundo_mobile.webp" alt="Spaghetti">
                     <h4>Spaghetti</h4>
                     <p>Macarrão caseiro, comprado da fábrica, chegou hoje.</p>
+                    <p class="preco">R$14,90</p>
+                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
+                </li>
+                
+                <li class="Penne" onclick="selecionarPrato('Penne')">
+                    <img src="images/7609_grid_fundo_mobile.webp" alt="Penne">
+                    <h4>Penne</h4>
+                    <p>Penne importado da Itália, diretamente para a sua mesa.</p>
+                    <p class="preco">R$14,90</p>
+                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
+                </li>
+                
+                <li class="Penne" onclick="selecionarPrato('Penne')">
+                    <img src="images/7609_grid_fundo_mobile.webp" alt="Penne">
+                    <h4>Penne</h4>
+                    <p>Penne importado da Itália, diretamente para a sua mesa.</p>
+                    <p class="preco">R$14,90</p>
+                    <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
+                </li>
+                
+                <li class="Penne" onclick="selecionarPrato('Penne')">
+                    <img src="images/7609_grid_fundo_mobile.webp" alt="Penne">
+                    <h4>Penne</h4>
+                    <p>Penne importado da Itália, diretamente para a sua mesa.</p>
                     <p class="preco">R$14,90</p>
                     <ion-icon style="float: right; margin-top: 10px; font-size: 18px;" name="checkmark-circle"></ion-icon>
                 </li>
@@ -160,14 +185,61 @@
 
 
         <footer>
-            <button onclick="atualizarBotao(this)">
+            <button onclick="popup()">
                 Selecione os 3 itens para fechar o pedido
             </button>
         </footer>
+        <div class="popup-wrapper">
+            <div class="popup">
+                <div class="popup-content">
+                        <h2>Confirme seu pedido</h2>
+                        <div class="pedidos">
+                           <div class="pedido food" >
+                                <div class="item1">
+                                <p>Lasanha</p>
+                                </div>
+                               <div class="precoPedido foodPrice">
+                                <p>R$10,00</p>
+                           </div>
+                           </div>
+                           
+                           <div class="pedido drink">
+                                <div class="item2">
+                                    <p>Lasanha</p>
+                                </div>
+                                <div class="precoPedido drinkPrice">
+                                <p>R$10,00</p>
+                                </div>
+                            </div>
 
-    
+                        <div class="pedido dessert">
+                            <div class="item3">
+                                <p>Lasanha</p>
+                            </div>
+                            <div class="precoPedido dessertPrice">
+                             <p>R$10,00</p>
+                            </div>
+                        </div>
+                        <div class="valor" style="display: flex; justify-content: space-between;">
+                         Total:
+
+                         <div class="valorTotal">
+                             R$10,00
+                         </div>
+                        </div>
+                        </div>
+                        <button class="pedirBtn">
+                            Tudo certo, pode pedir!
+                        </button>
+                        <button class="cancelPopup" onclick="cancelPopup()">
+                            Cancelar
+                        </button>
+                </div><!-- popup-content -->
+            
+            </div><!-- popup -->
+        </div><!-- popup wrapper -->
+
     </div><!-- content -->
-    </div><!-- confirmarPedido -->
     </div> <!-- container -->
     <script src="script.js" href="JavaScript"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
