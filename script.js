@@ -2,6 +2,8 @@ let prato;
 let bebida;
 let sobremesa;
 let valorPrato;
+let valorBebida;
+let valorSobremesa;
 
 function selecionarPrato(prato) {
   
@@ -86,16 +88,21 @@ function popup (){
   const popupPrecoPrato = document.querySelector('.foodPrice')
   const popupPrecoBebida = document.querySelector('.drinkPrice')
   const popupPrecoSobremesa = document.querySelector('.dessertPrice')
+  const total = document.querySelector('.valorTotal')
+
+
 
   if(botaoLiberado !== null){
   const popup = document.querySelector(".popup-wrapper")
   popup.style.display = "inherit"
   popupPrato.innerHTML = selecaoPrato
-  popupPrecoPrato.innerHTML = precoPrato
+  popupPrecoPrato.innerHTML = precoPrato.replace('R$','')
   popupBebida.innerHTML = selecaoBebida
-  popupPrecoBebida.innerHTML = precoBebida
+  popupPrecoBebida.innerHTML = precoBebida.replace('R$','')
   popupSobremesa.innerHTML = selecaoSobremesa
-  popupPrecoSobremesa.innerHTML = precoSobremesa
+  popupPrecoSobremesa.innerHTML = precoSobremesa.replace('R$','')
+  let calculo = Number(popupPrecoPrato.innerHTML.replace(',',".")) + Number(popupPrecoBebida.innerHTML.replace(',',".")) + Number(popupPrecoSobremesa.innerHTML.replace(',',"."))
+  total.innerHTML = "R$ " + calculo.toFixed(2)
   }
 
 
@@ -107,4 +114,8 @@ function cancelPopup () {
   const popup = document.querySelector(".popup-wrapper")
   popup.style.display = "none"
 
+}
+
+function pedidoWhatsapp (){
+  
 }
